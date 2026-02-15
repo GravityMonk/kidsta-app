@@ -14,4 +14,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD gunicorn --workers 2 --bind 0.0.0.0:$PORT app:app
+CMD ["sh", "-c", "gunicorn app:app --bind 0.0.0.0:$PORT"]
