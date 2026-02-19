@@ -171,12 +171,43 @@ body {
     justify-content: center;
 }
 
-/* ---------- Responsive ---------- */
+/* ---------- Mobile Responsive ---------- */
 @media (max-width: 480px) {
+
+    .topbar {
+        padding: 6px 10px;
+        min-height: 48px;
+        align-items: center;
+    }
+
+    .topbar-title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .topbar-links {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .topbar-links a {
+        font-size: 12px;
+        margin-left: 0;
+        padding: 4px 6px;
+    }
+
     .page-wrapper {
         padding: 0 8px;
     }
-    .topbar {
-        padding: 10px 10px;
+
+    .card-title {
+        font-size: 16px;
     }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
 }
